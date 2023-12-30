@@ -15,28 +15,44 @@ const CreateNewGraph = () => {
   return (
     <MaxWidthWrapper>
       <div className="flex flex-col w-full gap-7 md:gap-9">
-        <span className="w-full text-3xl">Create New Graph</span>
+        <span className="w-full text-3xl" style={{ color: 'black' }}>
+          Create New Graph
+        </span>
 
         <div className="flex flex-col gap-2">
-          <Label htmlFor="name">Name your graph!</Label>
+          <Label htmlFor="name" style={{ color: 'black' }}>
+            Name your graph!
+          </Label>
           <Input name="name" />
         </div>
 
         <div className="flex flex-col gap-2">
-          <Label htmlFor="description">{'Add a description (optional)'}</Label>
+          <Label htmlFor="description" style={{ color: 'black' }}>
+            {'Add a description (optional)'}
+          </Label>
           <Textarea name="name" />
         </div>
 
         <div className="flex flex-col gap-5">
-          <Label>What color would you like your graph to be?</Label>
+          <Label style={{ color: 'black' }}>
+            What color would you like your graph to be?
+          </Label>
           <div className="flex w-full justify-center">
             <HexColorPicker color={color} onChange={setColor} />
           </div>
-          <span className="flex w-full justify-center">{color}</span>
+          <span
+            className="flex w-full justify-center"
+            style={{ color: 'black' }}
+          >
+            {color}
+          </span>
         </div>
 
         <div className="flex w-full justify-start md:justify-end">
-          <Button variant="secondary" style={{ backgroundColor: 'Blue' }}>
+          <Button
+            variant="secondary"
+            style={{ backgroundColor: 'grey', color: 'black' }}
+          >
             Create Graph
           </Button>
         </div>

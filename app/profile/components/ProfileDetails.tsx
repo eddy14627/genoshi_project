@@ -11,6 +11,9 @@ const ProfileDetails = () => {
   return (
     <div className="rounded-md flex md:flex-row gap-8 border-[1px] bg-dark-tremor-background-subtle bg-opacity-0 px-auto">
       <div className="flex flex-col gap-1 px-20">
+        <Link href="/profile/edit" className="ml-auto mt-2">
+          <EditIcon props="w-6 h-6 text-white" />
+        </Link>
         <img
           width={128}
           height={128}
@@ -30,9 +33,6 @@ const ProfileDetails = () => {
         />
         <Input label="Bio" value={data.bio} valueProps="text-md font-[400]" />
         <Input label="Work" value={data.work} valueProps="text-md font-[400]" />
-        <Link className="h-fit w-fit p-2" href="/profile/edit">
-          <EditIcon props="w-[18px] text-white" />
-        </Link>
       </div>
     </div>
   );
@@ -43,7 +43,7 @@ export default ProfileDetails;
 const profile = {
   name: 'Adarsh Mishra',
   email: 'adjee2020@gmail.com',
-  bio: 'Aspiring to be a world known engineer. Being a computer science student, I want to contribute to the projects that will shape upcoming generations.',
+  bio: 'Aspiring to be a world-known engineer. Being a computer science student, I want to contribute to the projects that will shape upcoming generations.',
   img: 'https://st3.depositphotos.com/15648834/17930/v/380/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg',
   csp: 'Basic Plan',
   status: 'Activated'
