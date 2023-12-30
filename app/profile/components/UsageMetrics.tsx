@@ -4,7 +4,7 @@ import { Card, Title } from '@tremor/react';
 
 const UsageMetrics = () => {
   // Function to generate a random number between min and max
-  const getRandomNumber = (min, max) =>
+  const getRandomNumber = (min: number, max: number) =>
     Math.floor(Math.random() * (max - min + 1) + min);
 
   return (
