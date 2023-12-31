@@ -16,6 +16,10 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   color: white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 body {

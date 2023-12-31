@@ -16,7 +16,6 @@ const Profile = () => {
             <TabsTrigger
               className="w-full text-lg text-white"
               value="my-graphs"
-              // Add dark grey highlight
               style={{ backgroundColor: '#333' }}
             >
               My Graphs
@@ -24,7 +23,6 @@ const Profile = () => {
             <TabsTrigger
               className="w-full text-lg text-white"
               value="paper-collections"
-              // Add dark grey highlight
               style={{ backgroundColor: '#333' }}
             >
               Paper Collections

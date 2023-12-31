@@ -1,11 +1,9 @@
 // Homepage.js
 import Card from './home/components/Card';
 
-// Update the path based on your project structure
-
 export default function Homepage() {
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center ">
+    <div className="w-full h-full flex flex-col justify-center items-center my-auto">
       <Card
         title="Profile"
         description="Explore your profile and customize your settings."

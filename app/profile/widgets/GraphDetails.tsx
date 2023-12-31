@@ -49,10 +49,7 @@ const GraphDetails = ({ data }: { data: UserGraph }) => {
 
           <div className="flex flex-col gap-2 md:px-5">
             {TEST_PAPERS.map((paper) => {
-              return (
-                <PaperItem key={paper.id} data={paper} />
-                // <p>s</p>
-              );
+              return <PaperItem key={paper.id} data={paper} />;
             })}
           </div>
         </div>

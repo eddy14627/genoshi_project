@@ -12,25 +12,7 @@ const UserGraphListItem = ({ data }: { data: UserGraph }) => {
           {data.title}
         </Button>
       </DrawerTrigger>
-
       <GraphDetails data={data} />
-
-      {/* Add the following styles for dark grey background */}
-      <style jsx>{`
-        .drawer-overlay {
-          background-color: rgba(
-            0,
-            0,
-            0,
-            0.6
-          ); // Dark grey with some transparency
-        }
-
-        .drawer-content {
-          background-color: #333; // Dark grey
-          color: white; // White text color
-        }
-      `}</style>
     </Drawer>
   );
 };

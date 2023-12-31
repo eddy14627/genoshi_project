@@ -23,8 +23,6 @@ export default async function ProfilePage() {
           <GraphComplete />
         </div>
       </div>
-
-      <div className="flex text-gray-200 justify-center text-xl mt-8">-X-</div>
     </div>
   );
 }
